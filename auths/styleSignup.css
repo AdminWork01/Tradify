@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.signup-page {
+  display: flex;
+  color: white;
+  background: #1b202b;
+  min-height: 90vh;
+  padding-top: 40px;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.image > img {
+  width: 450px;
+}
+.image > div > h1 {
+  font-size: 4vw;
+}
+.image > div > p {
+  font-weight: semibold;
+  font-size: 2vw;
+  color: #bbbbbb;
+}
+.content {
+  background: #31353f;
+  padding: 3% 7%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.home-icon {
+  display: flex;
+  justify-content: center;
+}
+.home-icon > img {
+  background: gray;
+  width: 60px;
+  border-radius: 5%;
+}
+.get-started {
+  display: none;
+  color: #bbbbbb;
+}
+
+.create-account {
+  font-size: 3vw;
+  margin-top: 20px;
+}
+.signup-form > div {
+  margin-top: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info > input {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  margin-top: 5px;
+  border: 1px solid gray;
+}
+.info > input:focus {
+  outline: 1px solid #bbbbbb;
+}
+.blue-text {
+  color: #3a6ffb;
+}
+
+.submit-btn {
+  background: #3a6ffb;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0006); */
+  /* box-shadow: 0 0 5px #3a6ffb, 0 0 15px #3a6ffb, 0 0 25px #3a6ffb,
+    0 0 100px #3a6ffb; */
+}
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-icon {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+  }
+  .home-icon > img {
+    border-radius: 50%;
+  }
+  .signup-page {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .image {
+    width: 100%;
+    align-items: end;
+  }
+
+  .image > img {
+    width: 250px;
+  }
+  .image > div {
+    display: none;
+  }
+
+  .get-started {
+    display: block;
+  }
+  .content {
+    padding: 50px 10%;
+  }
+  .create-account {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+}
